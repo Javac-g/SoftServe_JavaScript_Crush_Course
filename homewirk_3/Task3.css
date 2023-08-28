@@ -1,0 +1,30 @@
+body {
+  margin: 2rem;
+}
+
+.slider {
+  max-width: 1140px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slides {
+  width: 100000px;
+  position: relative;
+  transition: all linear .2s;
+  will-change: transform;
+    transform: translateZ(0);
+}
+
+.slide {
+  float: left;
+    transform: translateZ(0);
+}
+
+.slide img {
+  width: 100%;
+  user-select: none;
+  
+  /** Safari/webkit flicker fix **/
+  user-select: none;
+}
