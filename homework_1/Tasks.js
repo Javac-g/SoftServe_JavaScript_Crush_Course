@@ -57,6 +57,18 @@ let numb = Math.trunc(money / price);
 let oth = money - (price * numb) ;
 let res = numb + '/' + oth;
 alert(' chocolates/change =' + res);
+//Task N 9
+///////////////////////
+function order(phrase) {
+ let res = phrase
+    .split(' ')
+    .sort(function(a , b) {
+      return a.match( /\d/ ) - b.match( /\d/ );
+    })
+    .join(' ');
+alert(res)
+}
+order('is2 Thi1s T4est 3a')
 
 //Task № 9
 ///////////////////////
